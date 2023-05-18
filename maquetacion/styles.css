@@ -1,40 +1,156 @@
 
-
-
-html {
-    font-family: 'Inter', sans-serif;
-    font-size: 16px;
+body {
+    margin: 0;
+    font-family: 'Inter',sans-serif;
+    font-size: 20px;
 }
 
-p {
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 14px 40px;
+    background-color: #ffffff;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid #000000;
+
+}
+#navbar-left {
+    display: flex;
+    align-items: center;
+    margin-right: 1em;
+    height: 4em;
+    top:0;
+}
+
+#logo {
+    width: 7.1em;
+    height: 2em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 16em;
+    margin-right: 0;
+    display: block;
+    float: left;
+    max-width: 100%;
+  
+}
+#linkedin {
+    width: 0.6em;
+    height: 0.7em;
+    float: right;
+    padding: 0;
+    margin-left: 1.5em;
+  
+}
+
+#navbar-right {
+    display: flex;
+    align-items: center;
+    margin-right: 19em;
+}
+
+#navbar-right p {
     margin-right: 2em;
-    font-weight: bold;
-    font-size: 0.9em;
+    font-size: 0.7em;
     font-weight: 500;
+    margin-left: auto; /* Agregado */
 }
 
 button {
-    background-color: white;
-    border-radius: 30px;
-    padding: 0px 1.5em;
+    background-color: #ffffff;
+    border: 2px solid #000000;
+    border-radius: 2em;
+    display: inline;
+    padding: 0 1.2em;
+    font-size: 0.6em;
+    line-height: 1;
     height: 2.5em;
-    border: 2px solid black;
+    width: 7.5em;
+    color: #000000;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+#contact-form {
+    max-width: 100%;
+    margin: 2em;
+}
+
+#contact-form h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#contact-form p {
+    font-size: 14px;
+    line-height: 18px;
+}
+
+#contact-form .input-container {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+#name,
+#email,
+#consulta {
+    flex: 1;
+    margin-right: 3em;
+    width: 20%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s;
+}
+
+#mensaje {
+    width: 68.3%;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding: 10px;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s;
+}
+
+#contact-form button {
+    background-color: #ffffff;
+    border: 2px solid #000000;
+    border-radius: 2em;
+    display: inline;
+    margin-right: 47em;
+    padding: 0 1.2em;
+    font-size: 0.6em;
+    line-height: 1;
+    height: 2.5em;
+    width: 7.5em;
+    color: #000000;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    float: right;
+}
+
+#contact-form button:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+#name:focus,
+#email:focus,
+#consulta:focus,
+#mensaje:focus {
+    border: 1px solid #9b51e0;
+    outline: none;
+}
+
+#name:hover,
+#email:hover,
+#consulta:hover,
+#mensaje:hover {
+    border-color: #9b51e0;
+}
+
+#link{
     font-size: 0.8em;
-    width: 8em;
-}
-
-div#navbar-left img {
-    width: 8em;
-}
-
-@media (width >= 2500px) {
-    html {
-        font-size: 28px;
-    }
-}
-
-@media (width >= 3500px) {
-    html {
-        font-size: 32px;
-    }
 }
